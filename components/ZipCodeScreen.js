@@ -26,6 +26,7 @@ export default class WeatherScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
+      
       <View>
         <FlatList
           data={availableZipItems}
@@ -33,6 +34,7 @@ export default class WeatherScreen extends React.Component {
           renderItem={({item}) => <ZipItem {...item} navigate={navigate}/>}
         />
       </View>
+      
     );
   }
 }
